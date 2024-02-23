@@ -10,6 +10,6 @@ let letras=[
 let palabraEncriptada="";
 for (let i=0;i<=palabraUsuario.length;i++){
     
-    console.log (i);
+    console.log (palabraUsuario.substring(i-1,i));
 
 }
