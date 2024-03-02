@@ -1,4 +1,129 @@
-.icono-pestaña{
-    width: 5px;
-    height: 5px;
+header{
+    position: fixed;
+    width: 120px;
+    height: 48px;
+    padding: 40px 0px 0px 40px;
+    gap: 40px;
+}
+.cuadrotexto{
+    position: fixed;
+    top :168px;
+    left: 240px;
+    width: 577px;
+    height: 48px;   
+    border-radius: 32px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px ;
+    padding: 10px 20px 0 20px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #0A3871;
+}
+.caja-alerta{
+    display:flex ;
+    gap: 8px;
+    position: fixed;
+    top: 710px;
+    left: 240px;
+    opacity: 80%;    
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+.botones{
+    display: flex;
+    position: fixed;
+    font-family: "Inter", sans-serif;
+    top: 750px;
+    left: 230px;
+}
+.btnencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.btndesencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #d8dfe8;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;   
+}
+.cajaimg{
+    position: fixed;
+    border: none;
+    top: 40px;
+    left: 1000px;
+    height: 800px;
+    width: 400px;
+    border-radius: 32px;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 10px 0 0 30px;
+}
+.muneco{
+    position:fixed;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+.mensaje{
+    position: fixed;
+    left: 1032px;
+    top: 619px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    width: 360px;
+    gap: 24px;
+
+}
+.mensaje h3{
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+.mensaje p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.btncopiar{
+    position: fixed;
+    width: 336px;
+    height: 67px;
+    top: 750px;
+    left: 1050px;
+    border-radius: 24px;
+    border: 1px;
+    background-color: #d8dfe8;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+footer{
+    position: absolute;
+    top: 880px;
+    left: 50%;
 }
