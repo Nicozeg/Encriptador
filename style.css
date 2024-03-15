@@ -1,129 +1,247 @@
-header{
-    position: fixed;
-    width: 120px;
-    height: 48px;
-    padding: 40px 0px 0px 40px;
-    gap: 40px;
-}
-.cuadrotexto{
-    position: fixed;
-    top :168px;
-    left: 240px;
-    width: 577px;
-    height: 48px;   
-    border-radius: 32px;
-    border: none;
+*{
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 32px ;
-    padding: 10px 20px 0 20px;
-    font-weight: 400;
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 10.29%;
+}
+.logo{
+    position: absolute;
+    width:8.54%;
+    height:50% ;
+    padding: 6.40% 87.2% 6.40% 4.27%;
+}
+.caja-1{
+    position: absolute;
+    width: 100%;
+    height: 53.267%;
+    top: 8.29%;
+    padding: 4.934% 0 0 2%;
+}
+.cuadrotexto{
+    position: absolute;
+    width:91.47%;
+    height: 48.69%;
+    border-style: none;
+    outline: none;
+    font-size: 32px;
     line-height: 48px;
     color: #0A3871;
 }
 .caja-alerta{
-    display:flex ;
-    gap: 8px;
-    position: fixed;
-    top: 710px;
-    left: 240px;
-    opacity: 80%;    
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
+    position: absolute;
+    display: flex;
+    gap:8px;
+    opacity: 80%;
     font-size: 12px;
+    line-height: 18px;
+    width:91.47%;
+    height: 18px;
+    top: 56.34%;
 }
 .botones{
-    display: flex;
-    position: fixed;
-    font-family: "Inter", sans-serif;
-    top: 750px;
-    left: 230px;
+    position: absolute;
+    display: grid;
+    width:91.47%;
+    height: 13.65%;
+    gap:24px;
+    top: 61%;
 }
 .btnencriptar{
-    width: 328px;
+    background: #0A3871;
+    color: #fff;
     height: 67px;
-    border-radius: 24px;
-    background-color: #0A3871;
-    color: white;
     font-size: 16px;
-    font-weight: 400;
-    font-family: 'Inter', sans-serif;
     border: none;
-    margin-right: 20px;
-    cursor: pointer;
+    border-radius: 32px;
 }
 .btndesencriptar{
-    width: 328px;
+    background: #D8DFE8;
+    color: #0A3871;
     height: 67px;
-    border-radius: 24px;
-    background-color: #d8dfe8;
-    color: #000000;
     font-size: 16px;
-    font-weight: 400;
-    font-family: 'Inter', sans-serif;
     border: none;
-    margin-right: 20px;
-    cursor: pointer;   
+    border-radius: 32px;
+}
+.caja-2{
+    position: absolute;
+    width: 100%;
+    height: 26.937%;
+    top:61.40%;
+    padding: 0 0 0 2%;
 }
 .cajaimg{
-    position: fixed;
-    border: none;
-    top: 40px;
-    left: 1000px;
-    height: 800px;
-    width: 400px;
-    border-radius: 32px;
-    font-family: "Inter", sans-serif;
+    position: absolute;
+    width:91.47%;
+    height: 90%;
+    border-style: none;
+    outline: none;
     font-size: 32px;
-    font-weight: 400;
-    padding: 10px 0 0 30px;
+    line-height: 48px;
+    color: #0A3871;
+    overflow: scroll;
+    resize: none;
+    border-radius: 32px;
 }
 .muneco{
-    position:fixed;
-    width: 336px;
-    height: 304px;
-    left: 1032px;
-    top: 283px;
-}
-.mensaje{
-    position: fixed;
-    left: 1032px;
-    top: 619px;
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    width: 360px;
-    gap: 24px;
-
+    position:absolute;
+    visibility: hidden;
 }
 .mensaje h3{
-    padding-bottom: 10px;
+    position:absolute;
+    width: 91.47%;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 28.8px;
+    font-size: 20px;
+    top: 20%;
+    text-align: center;
 }
 .mensaje p{
-    font-weight: 400;
+    position:absolute;
+    width: 91.47%;
     font-size: 16px;
-    line-height: 24px;
+    top: 48%;
+    text-align: center;
 }
 .btncopiar{
-    position: fixed;
-    width: 336px;
+    position: absolute;
+    background: #D8DFE8;
+    color: #0A3871;
     height: 67px;
-    top: 750px;
-    left: 1050px;
-    border-radius: 24px;
-    border: 1px;
-    background-color: #d8dfe8;
-    color: black;
+    width:91.47%;
     font-size: 16px;
-    font-weight: 400;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    cursor: pointer;
+    border: none;
+    border-radius: 32px;
+    top: 97%;
 }
 footer{
-    position: absolute;
-    top: 880px;
-    left: 50%;
+    position:absolute;
+    background: #0A3871;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 3em;
+    padding-top: 5px;
+    top:96.1%;
 }
+@media (min-width:768px){
+    .logo{
+        width:4.05%;
+        height:40.31% ;
+    }
+    .cuadrotexto{
+        height: 65.69%;
+    }
+    .caja-alerta{
+        top: 75.34%;
+    }
+    .botones{
+        display: flex;
+        top: 80%;
+    }
+    .btnencriptar{
+        background: #0A3871;
+        color: #fff;
+        width: 50%;
+        height: 67px;
+        font-size: 16px;
+        border: none;
+        border-radius: 32px;
+    }
+    .btndesencriptar{
+        background: #D8DFE8;
+        color: #0A3871;
+        height: 67px;
+        width: 50%;
+        font-size: 16px;
+        border: none;
+        border-radius: 32px;
+    }
+    .btncopiar{
+        width:50%;
+        left: 20%;
+    }
+    .pie-web{
+        font-size: 24px;
+    }
+    
+}
+@media (min-width:1440px){
+    header{
+        width: 100%;
+        height: 9%;
+    }
+    .logo{
+        width: 2%;
+        height: 51%;
+        padding: 2.7% 0 0 5.8%;
+    }
+    .caja-1{
+        top: 16.29%;
+        left: 15%;
+        width: 49%;
+        height: 78%;
+        padding: 0 0 0 0;
+    }
+    .cuadrotexto{
+        width:98.47%;
+        height: 81.69%;
+    }
+    .caja-alerta{
+        top: 85.7%;
+        left: 2.5%;
+    }
+    .botones{
+        display: flex;
+        width:94.47%;
+        top: 90%;
+        left: 2.5%;
+    }
+    .btnencriptar{
+        width: 48%;
+    }
+    .btndesencriptar{
+        width: 50%;
+        border: solid 1px;
+        border-color: #0A3871;
+    }
+    .caja-2{
+        left:70.3%;
+        top:3.7%;
+        width:27.23%;
+        height: 92.188%;
+        padding: 0 0 0 0;
+    }
+    .cajaimg{
+        height: 96%;
+    }
+    .muneco{
+        visibility: initial;
+        top:23.7%;
+    }
+    .mensaje h3{
+        width: 61.47%;
+        font-weight: 900;
+        font-size: 24px;
+        top: 62%;
+        left: 14%;
+    }
+    .mensaje p{
+        font-size: 21px;
+        top: 70%;
+    }
+    .btncopiar{
+        top: 87%;
+    }
+    footer{
+        height: 6%;
+        top:93.9%;
+    }
+    .pie-web{
+        position: absolute;
+        top:45%;
+        left: 39%;
+    }
+}   
+

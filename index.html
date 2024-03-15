@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="website icon" type="png" href="img/Logo.png">
+    <link rel="website icon" type="png" href="img/Top.png">
     <title>Encriptador de texto</title>
     </head>
+
     <body>
         <header>
-            <img src="img/Logo.png" alt="Logo">
+            <img class="logo" src="img/Top.png" alt="Logo">
         </header>
         <main>
-            <section>
+            <section class="caja-1">
                 <div>
-                    <textarea class="cuadrotexto" placeholder="Ingrese el texto aquí."></textarea>
+                    <textarea type="text" class="cuadrotexto" placeholder="Ingrese el texto aquí."></textarea>
 
                 </div>
                 <div class="caja-alerta">
@@ -26,26 +27,31 @@
                     <p  class="alerta">Solo letras minusculas y sin acentos.</p>
                 </div>
                 <div class="botones">    
-                    <input type="button" class="btnencriptar" value="Encriptar">
-                    <input type="button" class="btndesencriptar" value="Desencriptar">
+                    <input type="button" class="btnencriptar" value="Encriptar" onclick="encriptar()">
+                    <input type="button"  class="btndesencriptar" value="Desencriptar" onclick="desencriptar()">
                 </div>
             </section>
-            <section>
+            <section class="caja-2">
                 <div>
-                    <textarea class="cajaimg"></textarea>
+                    <textarea class="cajaimg" readonly></textarea>
+                </div>   
+                <div>
                     <img class="muneco" src="img/Muñeco.png" alt="muneco">
-                </div>    
+                </div>
                 <div class="mensaje">
-                    <h3>Ningún mensaje fue encontrado</h3>
-                    <p>Ingresa el texto que desees encriptar <br>o esencriptar</br> </p>
+                    <h3 class="titulo">Ningún mensaje fue encontrado</h3>
+                    <p class="sub-titulo">Ingresa el texto que desees <br>encriptar o esencriptar</br></p>
                 </div>
                 <div>
-                    <input type="button" class="btncopiar" value="Copiar">
+                    <input type="button" class="btncopiar" value="Copiar"
+                    onclick="copiar()">
                 </div>
             </section>
-         </main>
+        </main>
+
         <footer>
-            <p>Jayson Alberto Baide Rodriguez / 2024.</p>
+            <p class="pie-web">Jayson Alberto Baide Rodriguez / 2024.</p>
         </footer>
-</body>
+        <script src="app.js"></script>
+    </body>
 </html>
